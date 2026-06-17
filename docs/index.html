@@ -111,14 +111,23 @@
           <p>Courier relay — <code>courier_relay</code>, <code>fleet_status</code>. (<a href="https://github.com/the-oracle-keeps-the-human-human/workshop-04-esp32-wasm/tree/main/submissions/03-vessel">03-vessel</a>)</p>
           <esp-web-install-button manifest="manifest-vessel.json"></esp-web-install-button></div>
 
-        <div class="fw"><div class="h"><b>🪨 Gon</b> <span class="tag">ESP32</span> <span class="tag" style="background:rgba(0,255,136,.15);color:#00ff88;">updated 2026-06-17</span></div>
+        <div class="fw"><div class="h"><b>🪨 Gon</b> <span class="tag">ESP32</span> <span class="tag" style="background:rgba(0,255,136,.15);color:#00ff88;">upd 2026-06-17</span></div>
           <p>DustBoy PM2.5→AQI — <code>pm25_to_aqi(75)=2</code>, <code>add(2,3)=5</code>. 124-byte WASM, zero imports. (<a href="https://github.com/the-oracle-keeps-the-human-human/workshop-04-esp32-wasm/tree/main/submissions/03-gon">03-gon</a>)</p>
-          <div style="display:flex;gap:1rem;align-items:center;margin:.5rem 0;">
-            <img src="preview/gon-preview.png" alt="Gon DustBoy PM2.5 gauge" style="width:96px;height:144px;border-radius:8px;border:1px solid #23232a;image-rendering:pixelated;">
+          <div style="display:flex;gap:1rem;align-items:flex-start;margin:.5rem 0;">
+            <div style="flex:0 0 auto;border-radius:12px;border:1px solid #23232a;overflow:hidden;background:#0e0f12;padding:4px;">
+              <img src="preview/gon-anim.gif" alt="Gon PM2.5 gauge animation" style="width:96px;height:100px;image-rendering:pixelated;display:block;">
+              <div style="font:9px/1 ui-monospace,monospace;letter-spacing:.12em;text-align:center;padding:4px 0 2px;color:#8a8a93;">gon · 96×100 · 6 frames · decoded in wasm</div>
+            </div>
             <div style="font-size:12px;color:#8a8a93;">
               <b style="color:#e8e6df;">PM2.5 → AQI gauge</b><br>
-              🟢 0-25 Good<br>🟡 26-50 Moderate<br>🟠 51-100 Sensitive<br>🔴 101+ Unhealthy<br>
-              <code style="font-size:11px;">124 bytes · wasm3 · zero imports</code>
+              🟢 Good &nbsp;🟡 Moderate<br>🟠 Sensitive &nbsp;🔴 Unhealthy<br>
+              <code style="font-size:11px;">124 bytes · wasm3 · zero imports</code><br>
+              <span style="display:inline-flex;gap:4px;flex-wrap:wrap;margin-top:6px;">
+                <span style="background:#23232a;border:1px solid #30363d;border-radius:4px;padding:1px 6px;font-size:11px;color:#00ff88;">good</span>
+                <span style="background:#23232a;border:1px solid #30363d;border-radius:4px;padding:1px 6px;font-size:11px;color:#ffff00;">moderate</span>
+                <span style="background:#23232a;border:1px solid #30363d;border-radius:4px;padding:1px 6px;font-size:11px;color:#ff8800;">sensitive</span>
+                <span style="background:#23232a;border:1px solid #30363d;border-radius:4px;padding:1px 6px;font-size:11px;color:#ff4444;">unhealthy</span>
+              </span>
             </div>
           </div>
           <esp-web-install-button manifest="manifest-gon.json"></esp-web-install-button></div>
